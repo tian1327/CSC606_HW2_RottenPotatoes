@@ -8,6 +8,10 @@
 
 # Seed the RottenPotatoes DB with some movies.
 more_movies = [
+  {:title => 'The Shawshank Redemption', :rating => 'G',
+    :release_date => '22-Sep-1994'},
+  {:title => 'Avengers: Endgame', :rating => 'G',
+    :release_date => '26-Apr-2019'},
   {:title => 'My Neighbor Totoro', :rating => 'G',
     :release_date => '16-Apr-1988'},
   {:title => 'Green Book', :rating => 'PG-13',
