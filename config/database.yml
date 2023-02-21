@@ -20,6 +20,9 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# Don't we have to modify config/database.yml as well? 
+# You'd think so, but the way Heroku works, it actually ignores database.yml and forces Rails apps to use Postgres. 
+# So modifying the production: section of database.yml won't have any effect on Heroku.
 production:
   <<: *default
   database: db/production.sqlite3
